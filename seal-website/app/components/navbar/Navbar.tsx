@@ -5,7 +5,7 @@ import Container from '../Container'
 import Logo from './Logo'
 // components/Navbar.js
 import Link from 'next/link';
-import Menu from './menu';
+import Menu from './Menu';
 import Heading from '../Heading';
 import NavbarSection from '../NavbarSection';
 import ClientOnly from '../ClientOnly';
