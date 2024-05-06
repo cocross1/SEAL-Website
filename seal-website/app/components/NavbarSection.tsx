@@ -3,7 +3,8 @@ import React from 'react';
 
 interface NavbarSectionProps {
     title: string;
-    href: string; // This should be the id selector like "#about"
+    href?: string;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;// This should be the id selector like "#about"
 }
 const scrollToSection = (id: string) => {
     // Remove the leading "#" to use it as an id
@@ -21,7 +22,9 @@ const scrollToSection = (id: string) => {
 }
 
 
-const NavbarSection: React.FC<NavbarSectionProps> = ({ title, href }) => {
+const NavbarSection: React.FC<NavbarSectionProps> = ({ title, href,onClick }) => {
+    
+    if(href){
     const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         event.preventDefault(); // Prevent the default anchor behavior
         scrollToSection(href); // Use the href as the id to scroll to
@@ -34,6 +37,16 @@ const NavbarSection: React.FC<NavbarSectionProps> = ({ title, href }) => {
             </div>
         </a>
     );
+    } 
+    if(onClick){
+        return (
+            <button onClick={onClick} className="text-center p-5 justify-center md:block cursor-pointer hover:bg-gray-300 transition rounded-xl">
+            <div className='text-2xl font-bold text-center'>
+                {title}
+            </div>
+            </button>
+        )
+    }
 }
 
 export default NavbarSection;

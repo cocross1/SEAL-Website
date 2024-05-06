@@ -18,17 +18,9 @@ export default function Home() {
                 <InitiativesSection />
                 {/* Content for Initiatives */}
             </section>
-            <section id="team">
-                <SectionHeading title="Team" />
-                {/* Content for Team */}
-            </section>
             <section id="partners">
                 <SectionHeading title="Partners" />
                 {/* Content for Partners */}
-            </section>
-            <section id="media">
-                <SectionHeading title="Media" />
-                {/* Content for Media */}
             </section>
             <section id="contact">
                 <SectionHeading title="Contact Us" />
