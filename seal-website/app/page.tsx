@@ -1,9 +1,13 @@
 import Image from "next/image";
 import SectionHeading from "./components/SectionHeader";
+import HeroSection from "./components/HeroSection";
 
 export default function Home() {
   return (
         <div>
+            <section id="main">
+                <HeroSection />
+            </section>
             <section id="about">
                 <SectionHeading title="About" />
                 <div className="

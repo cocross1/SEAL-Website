@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Nunito } from "next/font/google";
+import { Inter, Nunito, Lato, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
@@ -11,8 +11,10 @@ export const metadata: Metadata = {
   description: "Researching and solving the world’s pressing health, social, and economic problems through a youth-driven movement.",
 };
 
-const font = Inter({
-  subsets:["latin"]
+const font = Playfair_Display({
+  weight:'400',
+  display: 'swap',
+  subsets: ['latin']
 });
 
 export default function RootLayout({
