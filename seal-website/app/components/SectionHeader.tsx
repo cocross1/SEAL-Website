@@ -12,7 +12,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({title, subtitle, center}
   return (
     <div className={center ? 'text-center' : 'text-start'}>
         
-        <div className='text-2xl font-bold text-center mt-20'>
+        <div className='text-5xl font-bold text-center mt-20'>
             {title}
         </div>
         <div className = "font-light text-neutral-500 mt-2">

@@ -4,7 +4,7 @@
 import React, { useCallback, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import MenuItem from './MenuItem';
-import { useRouter } from 'next/router'; // Corrected import
+
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);

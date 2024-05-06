@@ -30,7 +30,7 @@ const Button: React.FC<ButtonProps> = ({ title, href }) => {
     };
 
     return (
-        <a href={href} onClick={handleClick} className="bg-gray-100 text-center p-5 justify-center md:block cursor-pointer hover:bg-gray-300 transition rounded-xl">
+        <a href={href} onClick={handleClick} className="inline-block bg-gray-200 text-black font-bold py-2 px-4 rounded hover:bg-blue-300 transition duration-150 ease-in-out text-center text-2xl transform hover:scale-125">
             <div className='text-2xl font-bold text-center'>
                 {title}
             </div>
