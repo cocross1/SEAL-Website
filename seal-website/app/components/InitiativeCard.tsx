@@ -5,9 +5,11 @@ import { useCallback, useMemo } from "react";
 import useInitiative from "../hooks/useInitiative";
 import Heading from "./Heading";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 interface InitiativeCardProps {
   title:string,
+  link:string,
   body:string[],
   onAction?: (id: string) => void;
   disabled?: boolean;
@@ -18,6 +20,7 @@ interface InitiativeCardProps {
 
 const InitiativeCard: React.FC<InitiativeCardProps> = ({
   title,
+  link,
   body,
   onAction,
   disabled,
@@ -25,8 +28,7 @@ const InitiativeCard: React.FC<InitiativeCardProps> = ({
   actionId = "",
   imageSrc
 }) => {
-  const initiativeModal = useInitiative();
-
+  const router = useRouter();
 
   
 
@@ -48,10 +50,10 @@ const InitiativeCard: React.FC<InitiativeCardProps> = ({
           />
 
         </div> */}
-        <div  onClick={() => initiativeModal.onOpen( title,body)} className="w-full h-full text-center rounded-xl hover:scale-105 transition-transform duration-200">
+        <div   className="w-full h-full text-center rounded-xl hover:scale-105 transition-transform duration-200">
         <button
         disabled={disabled}
-        onClick={() => onAction && onAction(actionId)}
+        onClick={() =>  router.push(link)}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4"
       >
         Learn More

@@ -35,7 +35,7 @@ const InitiativesSection = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                   >
-                    <InitiativeCard title="Addressing Mental Health and the Digital Divide" imageSrc="/placeholder.png" body={[body1,body1proj2]}/>
+                    <InitiativeCard link="/initiatives/mental_health" title="Addressing Mental Health and the Digital Divide" imageSrc="/placeholder.png" body={[body1,body1proj2]}/>
                     
 
               </motion.div>
@@ -47,7 +47,7 @@ const InitiativesSection = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                   >
-                    <InitiativeCard title="Advocating for Healthcare Decarbonization" imageSrc="/placeholder.png" body={[body2, body2proj1]}/>
+                    <InitiativeCard link="/initiatives/decarbonization" title="Advocating for Healthcare Decarbonization" imageSrc="/placeholder.png" body={[body2, body2proj1]}/>
                     
 
               </motion.div>
@@ -59,7 +59,7 @@ const InitiativesSection = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                   >
-                    <InitiativeCard title="Assessing Global Care Delivery" imageSrc="/placeholder.png" body={[body3]}/>
+                    <InitiativeCard link="/initiatives/global_delivery" title="Assessing Global Care Delivery" imageSrc="/placeholder.png" body={[body3]}/>
                     
 
               </motion.div>
@@ -71,7 +71,7 @@ const InitiativesSection = () => {
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                   >
-                    <InitiativeCard title="Crafting Healthcare Legislation" imageSrc="/placeholder.png" body={[body4]}/>
+                    <InitiativeCard link="/initiatives/legislation" title="Crafting Healthcare Legislation" imageSrc="/placeholder.png" body={[body4]}/>
                     
 
               </motion.div>
