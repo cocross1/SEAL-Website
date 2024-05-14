@@ -38,7 +38,7 @@ const TeamSection = () => {
       flex flex-col gap-6
       mt-10 p-4">
       <SectionHeading title="Our Team" />
-      <div className="text-4xl underline font-bold text-center mb-6">
+      <div className="text-4xl underline font-bold text-center ">
           Team Members
       </div>
       <div className="
@@ -102,7 +102,7 @@ const TeamSection = () => {
                   <ProfileCard name="Aaryan Shah" bio={placeholder}  />
         </motion.div>
       </div>
-      <div className="text-4xl underline font-bold text-center mt-10 mb-6">
+      <div className="text-4xl underline font-bold text-center mt-10 ">
           Team Advisors
       </div>
       <div className="
