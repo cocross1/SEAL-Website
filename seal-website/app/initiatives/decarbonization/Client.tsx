@@ -13,12 +13,12 @@ const Client = () => {
         <div className="
                  mt-10
                  mx-20
-                 grid grid-cols-2 
+                 grid grid-row-2 
                  gap-4
                  justify-items-center">
                     
               <div className=" text-4xl">
-              <div className=" text-4xl underline font-bold">
+              <div className=" text-4xl underline font-bold text-center">
             Project Details
         </div>
             <div className="mt-10">
@@ -28,15 +28,16 @@ const Client = () => {
 
 
         <div className="">
-        <div className="text-center text-4xl underline font-bold">
+        <div className="mt-10 text-center text-4xl underline font-bold">
             Publications
         </div>
+        <div className="flex flex-row justify-center  mt-10 gap-4">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
-                    className="w-full flex justify-center"
+                    className="w-full flex justify-center px-5"
                   >
 
               <Publication img="/images/ahrq.png" href="https://www.ahrq.gov/sites/default/files/wysiwyg/healthsystemsresearch/decarbonization/decarbonization.pdf"/>
@@ -48,7 +49,7 @@ const Client = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
-                    className="w-full flex justify-center"
+                    className="w-full flex justify-center px-5"
                   >
               <Publication img="/images/catalyst.svg" href="https://catalyst.nejm.org/doi/full/10.1056/CAT.22.0433"/>
               </motion.div>
@@ -58,10 +59,11 @@ const Client = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.8, ease: "easeInOut" }}
-                    className="w-full flex justify-center"
+                    className="w-full flex justify-center px-5"
                   >
-              <Publication img="/images/ha.jpeg" href="https://www.healthaffairs.org/content/forefront/us-healthcare-sector-can-decarbonize-reduce-waste-and-improve-public-health-thoughtful"/>
+              <Publication img="/images/ha.jpg" href="https://www.healthaffairs.org/content/forefront/us-healthcare-sector-can-decarbonize-reduce-waste-and-improve-public-health-thoughtful"/>
               </motion.div>
+              </div>
               </div>
                 </div>
         </div>

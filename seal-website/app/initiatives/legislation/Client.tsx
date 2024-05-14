@@ -9,6 +9,24 @@ const Client = () => {
     return (
         <div>
         <SectionHeading title="Crafting Healthcare Legislation" />
+        <div>
+            <div className="
+                 mt-10
+                 mx-20
+                 grid grid-row-2 
+                 gap-4
+                 justify-items-center">
+                        
+                  <div className=" text-4xl">
+                  <div className=" text-4xl underline font-bold text-center">
+                Initiative Projects
+            </div>
+                <div className="mt-10">
+                    {proj}
+                    </div>
+                  </div>
+                </div>
+                </div>
         </div>
     );
 };

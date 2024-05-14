@@ -15,7 +15,7 @@ const Publication: React.FC<PublicationProps> = ({ img, href, alt }) => {
 
 
     return (
-        <a href={href} className="mt-5 flex items-center justify-center w-full h-full bg-gray-200 rounded-xl hover:bg-blue-300 transition duration-150 ease-in-out transform hover:scale-125 mt-3 py-2 px-4 text-center text-2xl font-bold">
+        <a href={href} className="mt-10 flex items-center justify-center w-full h-full bg-gray-200 rounded-xl hover:bg-blue-300 transition duration-150 ease-in-out transform hover:scale-125 mt-3 py-2 px-4 text-center text-2xl font-bold">
             <Image
                 alt={alt ? alt : "Publication"}
                 height={400}
