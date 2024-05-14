@@ -4,11 +4,12 @@
 import React, { useCallback, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import MenuItem from './MenuItem';
+import { useRouter } from 'next/navigation';
 
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState(false);
-    
+    const router = useRouter();
     const toggleOpen = useCallback(() => {
         setIsOpen((value) => !value);
     }, []);
@@ -58,27 +59,27 @@ const Menu = () => {
                     <div className="flex flex-col cursor-pointer opacity-100">
                         <>
                             <MenuItem
-                                onClick={() => {}}
+                                 href="#about"
                                 label="About"
                                 
                             />
                              <MenuItem
-                                onClick={() => {}}
+                                 href="#initiatives"
                                 label="Initiatives"
                                 
                             />
                             <MenuItem
-                                onClick={() => {}}
+                                onClick={()=>router.push('/team')}
                                 label="Team"
                                 
                             />
                             <MenuItem
-                                onClick={() => {}}
+                                href="#partners"
                                 label="Partners"
                                 
                             />
                             <MenuItem
-                                onClick={() => {}}
+                                onClick={()=>router.push('/media')}
                                 label="Media"
                                 
                             />
