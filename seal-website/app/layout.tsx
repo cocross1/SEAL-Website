@@ -3,7 +3,7 @@ import { Inter, Nunito, Lato, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
-import InitiativeModal from "./components/modals/InitiativeModal";
+import InitiativeModal from "./components/modals/BioModal";
 
 const inter = Inter({ subsets: ["latin"] });
 

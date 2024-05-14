@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useCallback, useMemo } from "react";
-import useInitiative from "../hooks/useInitiative";
 import Heading from "./Heading";
 import Button from "./Button";
 import { useRouter } from "next/navigation";
