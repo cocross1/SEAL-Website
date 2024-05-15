@@ -34,7 +34,7 @@ const InitiativeCard: React.FC<InitiativeCardProps> = ({
   return (
     <div
       
-      className=" flex flex-col gap-2 w-full overflow-hidden mt-10 rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200"
+      className="px-5 flex flex-col gap-2 w-full overflow-hidden mt-10 rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200"
     >
         <Heading title={title} />
       <div className="w-full h-full">
