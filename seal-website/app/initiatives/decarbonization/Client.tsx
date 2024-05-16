@@ -31,7 +31,7 @@ const Client = () => {
         <div className="mt-10 text-center text-4xl underline font-bold">
             Publications
         </div>
-        <div className="flex flex-row justify-center  mt-10 gap-4">
+        <div className="flex flex-row justify-center mt-10 gap-4 pt-5">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
