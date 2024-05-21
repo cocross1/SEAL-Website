@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Heading from './Heading';
-import NavbarSection from './NavbarSection';
+import NavbarSection from './navbar/NavbarSection';
 import Button from './Button';
 
 const HeroSection = () => {

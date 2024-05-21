@@ -5,6 +5,7 @@ import React, { useCallback, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import MenuItem from './MenuItem';
 import { useRouter } from 'next/navigation';
+import useContact from '@/app/hooks/useContact';
 
 
 const Menu = () => {
@@ -13,6 +14,9 @@ const Menu = () => {
     const toggleOpen = useCallback(() => {
         setIsOpen((value) => !value);
     }, []);
+    const contactModal = useContact();
+
+
 
     return (
         
@@ -83,10 +87,15 @@ const Menu = () => {
                                 label="Media"
                                 
                             />
+                            <MenuItem
+                                onClick={contactModal.onOpen}
+                                label="Contact Us"
+                                
+                            />
                             
 
                            
-                            {/* Add more MenuItem components as needed */}
+                            
                         </>
                     </div>
                 </div>

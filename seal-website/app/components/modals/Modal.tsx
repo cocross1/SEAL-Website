@@ -1,7 +1,7 @@
 'use client';
 import React, { useCallback, useEffect, useState } from 'react'
 import { IoMdClose } from 'react-icons/io';
-import Button from "../Button";
+
 
 interface ModalProps{
     isOpen?: boolean;
@@ -34,6 +34,13 @@ const Modal: React.FC<ModalProps> = ({
         onClose();
     }, 300)
   },[disabled, onClose]);
+
+  const handleSubmit = useCallback(() => {
+    if (disabled) {
+      return;
+    }
+    onSubmit();
+  }, [disabled, onSubmit]);
 
 
 
@@ -126,8 +133,18 @@ const Modal: React.FC<ModalProps> = ({
                     items-center 
                     gap-4 
                     w-full
+                    justify-center
                   ">
-                    
+                    {!disabled && actionLabel && (
+                    <button
+                      disabled={disabled}
+                      onClick={handleSubmit}
+                      className="text-center bg-black p-5 justify-center md:block cursor-pointer hover:bg-gray-700 transition rounded-xl">
+                <div className='text-2xl font-bold text-center text-white'>
+                    {actionLabel}
+                </div>
+                    </button>
+                  )}
                     </div>
                     </div>
                 </div>

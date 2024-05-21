@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { useEffect, useState } from "react";
 import { FieldErrors, FieldValues, UseFormRegister } from "react-hook-form";
@@ -13,8 +13,10 @@ interface InputProps {
   formatPrice?: boolean;
   register: UseFormRegister<FieldValues>;
   errors: FieldErrors;
-  value?: string | number;
+  defaultValue?: string | number;
   onChange?: (id: string, value: string) => void;
+  className?: string;
+  isTextArea?: boolean; // Add this line
 }
 
 const Input: React.FC<InputProps> = ({
@@ -26,19 +28,20 @@ const Input: React.FC<InputProps> = ({
   register,
   required,
   errors,
-  value,
+  defaultValue,
   onChange,
+  className,
+  isTextArea, // Add this line
 }) => {
-  const [inputValue, setInputValue] = useState<string | number | undefined>(
-    value
-  );
+  const [inputValue, setInputValue] = useState<string | number | undefined>(defaultValue);
+
   const { ref, onChange: formOnChange, ...rest } = register(id, { required });
 
   useEffect(() => {
-    setInputValue(value);
-  }, [value]);
+    setInputValue(defaultValue);
+  }, [defaultValue]);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const newValue = e.target.value;
     setInputValue(newValue);
     if (onChange) {
@@ -50,31 +53,57 @@ const Input: React.FC<InputProps> = ({
   };
 
   return (
-    <div className="w-full relative">
-      <input
-        id={id}
-        value={inputValue}
-        onChange={handleInputChange}
-        disabled={disabled}
-        // {...register(id, { required })}
-        ref={ref}
-        {...rest}
-        placeholder=" "
-        type={type}
-        className={`peer 
-        w-full 
-        p-4 
-        pt-6 
-        font-light 
-        bg-white border-2 
-        rounded-md 
-        outline-none 
-        transition 
-        disabled:opacity-70 
-        disabled:cursor-not-allowed 
-        ${errors[id] ? "border-rose-500" : "border-neutral-300"}
-        ${errors[id] ? "focus:border-rose-500" : "focus:border-black"}`}
-      />
+    <div className={`w-full relative ${className}`}>
+      {isTextArea ? (
+        <textarea
+          id={id}
+          value={inputValue}
+          onChange={handleInputChange}
+          disabled={disabled}
+          ref={ref}
+          {...rest}
+          placeholder=" "
+          className={`peer 
+            w-full 
+            p-4 
+            pt-6 
+            font-light 
+            bg-white border-2 
+            rounded-md 
+            outline-none 
+            transition 
+            disabled:opacity-70 
+            disabled:cursor-not-allowed 
+            ${errors[id] ? "border-rose-500" : "border-neutral-300"}
+            ${errors[id] ? "focus:border-rose-500" : "focus:border-black"}`}
+          rows={5} // Adjust the rows attribute to make the textarea larger
+        />
+      ) : (
+        <input
+          id={id}
+          value={inputValue}
+          onChange={handleInputChange}
+          disabled={disabled}
+          ref={ref}
+          {...rest}
+          placeholder=" "
+          type={type}
+          className={`peer 
+            w-full 
+            p-4 
+            pt-6 
+            font-light 
+            bg-white border-2 
+            rounded-md 
+            outline-none 
+            transition 
+            disabled:opacity-70 
+            disabled:cursor-not-allowed 
+            ${formatPrice ? 'pl-9' : ''}
+            ${errors[id] ? "border-rose-500" : "border-neutral-300"}
+            ${errors[id] ? "focus:border-rose-500" : "focus:border-black"}`}
+        />
+      )}
       <label
         className={`
         absolute
@@ -90,7 +119,7 @@ const Input: React.FC<InputProps> = ({
         peer-placeholder-shown:translate-y-0
         peer-focus:scale-75
         peer-focus:-translate-y-4
-        ${errors[id] ? "text-blue-500" : "text-zinc-400"}`}
+        ${errors[id] ? "text-rose-500" : "text-zinc-400"}`}
       >
         {label}
       </label>
