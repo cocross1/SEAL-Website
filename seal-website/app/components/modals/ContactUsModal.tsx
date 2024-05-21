@@ -46,8 +46,8 @@ const ContactUsModal = () => {
   const bodyContent = (
     <div className="flex flex-col gap-4 mt-3">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Input id="subject" label="Subject Line" register={register} disabled={isLoading} errors={errors} />
-        <Input id="email" label="Your Email" register={register} disabled={isLoading} errors={errors} />
+        <Input id="subject" label="Subject Line" register={register} disabled={isLoading} errors={errors} required={true}/>
+        <Input id="email" label="Your Email" register={register} disabled={isLoading} errors={errors} required={true}/>
       </div>
       <div className="mb-20">
         <Input
@@ -58,6 +58,7 @@ const ContactUsModal = () => {
           errors={errors}
           className="h-32"
           isTextArea={true}
+          required={true}
         />
       </div>
     </div>
