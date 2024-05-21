@@ -21,11 +21,7 @@ export default function Home() {
             <section id="partners">
                 <SectionHeading title="Partners" />
                 {/* Content for Partners */}
-            </section>
-            <section id="contact">
-                <SectionHeading title="Contact Us" />
-                {/* Content for Contact Us */}
-            </section>
+            </section> 
         </div>
   );
 }

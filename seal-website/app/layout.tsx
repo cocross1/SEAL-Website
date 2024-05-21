@@ -4,6 +4,7 @@ import "./globals.css";
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
 import InitiativeModal from "./components/modals/BioModal";
+import ContactUsModal from "./components/modals/ContactUsModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,8 +28,10 @@ export default function RootLayout({
 <html lang="en">
       <body className={font.className}>
         <ClientOnly>
+        <ContactUsModal />
         <Navbar />
         <InitiativeModal/>
+        
         </ClientOnly>
         <div className="pb-20 pt-28">
           {children}

@@ -3,9 +3,9 @@
 import { useRouter } from 'next/navigation';
 import React from 'react'
 
-interface MenuItemProps{
+interface MenuItemProps {
     onClick?: () => void;
-    href?:string;
+    href?: string;
     label: string;
 }
 
@@ -27,8 +27,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
     onClick,
     label,
     href
-})=> {
-
+}) => {
   const router = useRouter();
 
     const navigateToHome = () => {
@@ -37,55 +36,44 @@ const MenuItem: React.FC<MenuItemProps> = ({
             resolve();
         });
     };
+
     const handleClick = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
       event.preventDefault();
 
       if (href) {
           if (window.location.pathname !== '/') {
               navigateToHome().then(() => {
-                  // Delay the scrollToSection call to ensure the navigation is complete
                   setTimeout(() => scrollToSection(href), 100);
               });
-
-              
           } else {
               scrollToSection(href);
           }
       }
   };
+
+  const itemClass = "text-center p-3 md:block cursor-pointer hover:bg-gray-300 transition rounded-xl whitespace-normal break-words";
+
   if (href) {
     return (
-        <a href={href} onClick={handleClick} className="text-center p-5 justify-center md:block cursor-pointer hover:bg-gray-300 transition rounded-xl">
-    <div
-        onClick={onClick}
-        className="
-
-        px-4
-        py-3
-        transition
-        font-semibold "
-        >{label}</div>
+        <a href={href} onClick={handleClick} className={itemClass}>
+          <div onClick={onClick} className="px-4 py-3 transition font-semibold">
+            {label}
+          </div>
         </a>
     );
-} 
-if (onClick) {
-  return (
-      <button onClick={onClick} className="text-center p-5 justify-center md:block cursor-pointer hover:bg-gray-300 transition rounded-xl">
-    <div
-        onClick={onClick}
-        className="
+  } 
 
-        px-4
-        py-3
-        transition
-        font-semibold "
-        >{label}</div>
+  if (onClick) {
+    return (
+      <button onClick={onClick} className={itemClass}>
+        <div className="px-4 py-3 transition font-semibold">
+          {label}
+        </div>
       </button>
-  );
+    );
+  }
+
+  return null;
 }
-return null;
 
-
-}
-
-export default MenuItem
+export default MenuItem;
