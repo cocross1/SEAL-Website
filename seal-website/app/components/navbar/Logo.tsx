@@ -9,9 +9,9 @@ const Logo = () => {
   alt="Logo"
   className=" justify-center md:block cursor-pointer hover:bg-gray-300
   transition rounded-xl"
-  height="200"
-  width="300"
-  src="/images/logo.svg"
+  height="300"
+  width="350"
+  src="/images/H-logo.png"
   />
 
 }
