@@ -16,7 +16,7 @@ const InitiativesSection = () => {
     const body3 = " The climate crisis is the single greatest public health challenge of the 21st century. As a significant contributor to climate change, the healthcare sector faces an urgent call to action to reduce its carbon footprint and protect communities from climate threats. The Biden-Harris Administration has set clear goals for the country to cut greenhouse emissions (GHG) in half in the next 8 years, then move quickly to net zero before 2050, as outlined in the Federal Sustainability Plan. Our team is looking to engage young healthcare professionals in making climate policy a priority among hospitals, clinics, and the broader healthcare community."
     const body4 = "Focus on creating policy briefs for all of the above projects as well as other salient ideas. This team will meet with all of the other project committees to distill findings from our reports, interviews with key opinion leaders, and general information sessions into tangible briefs that can be disseminated to policymakers at both a local and national scale."
     return (
-        <div>
+      <div className="bg-blue-200 pt-5 pb-20">
         <SectionHeading title="Initiatives" />
         <div className="
                  mt-5
@@ -26,9 +26,7 @@ const InitiativesSection = () => {
                  items-center
                  justify-items-center">
 
-
-
-        <div className="bg-blue-300 w-full h-full mt-10 rounded-xl">
+        <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -40,7 +38,7 @@ const InitiativesSection = () => {
 
               </motion.div>
               </div>
-              <div className="bg-blue-300 w-full h-full mt-10 rounded-xl">
+              <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -52,7 +50,7 @@ const InitiativesSection = () => {
 
               </motion.div>
               </div>
-              <div className="bg-blue-300 w-full h-full mt-10 rounded-xl">
+              <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -64,7 +62,7 @@ const InitiativesSection = () => {
 
               </motion.div>
               </div>
-              <div className="bg-blue-300 w-full h-full mt-10 rounded-xl">
+              <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -76,19 +74,9 @@ const InitiativesSection = () => {
 
               </motion.div>
               </div>
-                </div>
-                </div>
+            </div>
+         </div>
     );
 };
 
 export default InitiativesSection;
-
-
-
-
-
-
-
-
-
-

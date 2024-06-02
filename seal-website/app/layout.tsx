@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Nunito, Lato, Playfair_Display } from "next/font/google";
+import { Inter, Nunito, Lato, Playfair_Display, Be_Vietnam_Pro, Nunito_Sans} from "next/font/google";
 import "./globals.css";
 import ClientOnly from "./components/ClientOnly";
 import Navbar from "./components/navbar/Navbar";
@@ -13,8 +13,14 @@ export const metadata: Metadata = {
   description: "Researching and solving the world’s pressing health, social, and economic problems through a youth-driven movement.",
 };
 
-const font = Playfair_Display({
-  weight:'400',
+// const font = Playfair_Display({
+//   weight:'400',
+//   display: 'swap',
+//   subsets: ['latin']
+// });
+
+const font = Be_Vietnam_Pro({
+  weight:'300',
   display: 'swap',
   subsets: ['latin']
 });

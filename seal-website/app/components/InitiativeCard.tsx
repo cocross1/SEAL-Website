@@ -34,7 +34,7 @@ const InitiativeCard: React.FC<InitiativeCardProps> = ({
   return (
     <div
       
-      className="px-5 flex flex-col gap-2 w-full overflow-hidden mt-10 rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200"
+      className="px-5 flex flex-col text-white gap-2 w-full overflow-hidden mt-10 rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200"
     >
         <Heading title={title} />
       <div className="w-full h-full">
@@ -53,7 +53,7 @@ const InitiativeCard: React.FC<InitiativeCardProps> = ({
         <button
         disabled={disabled}
         onClick={() =>  router.push(link)}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4"
+        className="bg-zinc-50 hover:bg-gray-300 text-black font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4"
       >
         Learn More
       </button>

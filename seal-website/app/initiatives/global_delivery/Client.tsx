@@ -48,8 +48,7 @@ const Client = () => {
                       >
     
                   <Publication img="/images/jnci.svg" href="https://academic.oup.com/jnci/article/115/2/125/6760235"/>
-                  
-    
+                
                   </motion.div>
                   <motion.div
                         initial={{ y: 50, opacity: 0 }}

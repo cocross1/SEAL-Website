@@ -15,7 +15,7 @@ const Navbar = () => {
   const router = useRouter();
   const contactModal = useContact();
   return (
-    <div className="fixed w-full bg-gray-200 p-1 z-10 shadow-sm">
+    <div className="fixed w-full h-100 bg-gray-200 p-1 z-10 shadow-sm">
       <div className="py-4 border-b-[1px]">
         <Container>
           <div className="flex w-full flex-row items-center justify-between gap-3 md:gap-0">
