@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import AboutSection from "./components/AboutSection";
 import MediaSection from "./components/MediaSection";
 import InitiativesSection from "./components/InitiativesSection";
+import PartnersSection from "./components/PartnersSection";
 
 export default function Home() {
   return (
@@ -20,8 +21,8 @@ export default function Home() {
                 {/* Content for Initiatives */}
             </section>
             <section id="partners">
-                <SectionHeading title="Partners" />
-                {/* Content for Partners */}
+                {/* <SectionHeading title="Partners" /> */}
+                <PartnersSection />
             </section> 
             <section id="media">
                 <MediaSection />

@@ -9,7 +9,7 @@ import SectionHeading from './SectionHeader';
 
 const AboutSection = () => {
     return (
-        <div>
+        <div className ="pb-10">
         <SectionHeading title="About" />
         <div className="
                  mt-5
@@ -37,9 +37,9 @@ const AboutSection = () => {
                 alt="Logo"
                 className="
                 transition rounded-xl items mt-10"
-                height="300"
-                width="300"
-              src="/images/BJ_Headshot_1.jpg"/>
+                height="400"
+                width="400"
+              src="/images/logo.png"/>
               </motion.div>
               </div>
                 </div>

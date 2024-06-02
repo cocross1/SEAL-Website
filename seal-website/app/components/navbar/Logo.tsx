@@ -7,10 +7,10 @@ const Logo = () => {
   return <Image 
   onClick={()=> router.push('/')}
   alt="Logo"
-  className=" justify-center md:block cursor-pointer hover:bg-gray-300
+  className=" justify-center md:block cursor-pointer
   transition rounded-xl"
-  height="300"
-  width="350"
+  width="300"
+  height="100"
   src="/images/H-logo.png"
   />
 

@@ -11,7 +11,7 @@ interface NavbarSectionProps {
 const scrollToSection = (id: string) => {
     const sectionId = id.startsWith('#') ? id.substring(1) : id;
     const section = document.getElementById(sectionId);
-    const navbarHeight = 180; // Height of your navbar, adjust accordingly
+    const navbarHeight = 100; // Height of your navbar, adjust accordingly
 
     if (section) {
         const sectionTop = section.getBoundingClientRect().top + window.pageYOffset - navbarHeight;

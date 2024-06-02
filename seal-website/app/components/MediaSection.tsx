@@ -39,7 +39,7 @@ const MediaSection = () => {
     const router = useRouter();
 
     return (
-        <div className="bg-blue-300 pt-10 pb-10">
+        <div className="bg-blue-200 pt-5 pb-10">
             <SectionHeading title="Highlighted Media"/>
             <div className="mt-5 mx-20 flex flex-col items-center justify-center">
                 <div className="relative w-full overflow-hidden">
@@ -67,7 +67,7 @@ const MediaSection = () => {
                                         <div className="w-full h-full text-center rounded-xl hover:scale-105 transition-transform duration-200">
                                             <button
                                                 onClick={() => router.push(card.link)}
-                                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4"
+                                                className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4"
                                             >
                                                 Read More
                                             </button>
