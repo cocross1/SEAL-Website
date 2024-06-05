@@ -5,7 +5,7 @@ import Container from '../Container';
 import Logo from './Logo';
 import Link from 'next/link';
 import Menu from './Menu';
-import Heading from '../Heading';
+// import Heading from '../Heading';
 import NavbarSection from './NavbarSection';
 import ClientOnly from '../ClientOnly';
 import { useRouter } from "next/navigation";

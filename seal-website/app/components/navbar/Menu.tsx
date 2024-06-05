@@ -40,7 +40,7 @@ const Menu = () => {
                     className="
                         bg-gray-800 
                         p-4
-                                                md:py-2     
+                        md:py-2     
                         md:px-3     
                         border-[1px]
                         border-neutral-300 
@@ -94,8 +94,8 @@ const Menu = () => {
                             />
                             <MenuItem
                                 //onClick={() => router.push('/media')}
-                                href="#partners"
-                                label="Partners"
+                                href="#media"
+                                label="Media"
                             />
                             <MenuItem
                                 onClick={contactModal.onOpen}

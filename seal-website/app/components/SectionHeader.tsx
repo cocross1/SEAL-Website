@@ -1,34 +1,28 @@
 'use client';
-import { Inter, Nunito, Lato, Playfair_Display, Be_Vietnam_Pro} from "next/font/google";
+import {Inria_Serif} from "next/font/google";
 import React from 'react'
 import { BiBold } from "react-icons/bi";
 
 interface SectionHeadingProps{
     title: string,
-    subtitle?: string;
     center?: boolean;
 }
 
-const font = Nunito({
-  //style: 'bold',
-  weight:'600',
+const font = Inria_Serif({
+  weight:'300',
   display: 'swap',
   subsets: ['latin']
 });
 
 
 
-const SectionHeading: React.FC<SectionHeadingProps> = ({title, subtitle, center}) => {
+const SectionHeading: React.FC<SectionHeadingProps> = ({title, center}) => {
   return (
-    
     <div className={center ? 'text-center' : 'text-start'}>
         <div className={font.className}>
-        <div className='text-8xl font-bold text-center mt-20'>
+        <div className='text-5xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl font-bold text-center mt-10 mb-5'>
             {title}
         </div>
-        </div>
-        <div className = "font-light text-neutral-500 mt-2">
-            {subtitle}
         </div>
     </div>
   )

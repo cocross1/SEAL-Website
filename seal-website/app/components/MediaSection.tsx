@@ -9,23 +9,24 @@ const MediaSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const cards = [
         {
-            title: 'NPR Article',
-            description: 'This can be a headline, or any intriguing sentence to make someone want to read more',
-            imageUrl: '/images/mediaplaceholder.jpg',
-            link: 'https://www.npr.org/',
+            title: 'UGA student on digital divide in mental health care and high-speed internet study',
+            description: 'Published by: GPB News',
+            imageUrl: '/images/media1.png',
+            link: 'https://www.gpb.org/news/2024/01/05/uga-student-on-digital-divide-in-mental-health-care-and-high-speed-internet-study',
         },
         {
-            title: 'Card 2',
-            description: 'Description for card 2',
-            imageUrl: '/images/mediaplaceholder.jpg',
-            link: ' https://www.upenn.edu/',
+            title: 'Physicians Are No More Likely to Be Politically Active Than Non-Physicians',
+            description: 'Published by: MedPage Today',
+            imageUrl: '/images/media3.png',
+            link: 'https://www.medpagetoday.com/publichealthpolicy/generalprofessionalissues/109526',
         },
         {
-            title: 'Card 3',
-            description: 'Description for card 3',
-            imageUrl: '/images/mediaplaceholder.jpg',
-            link: 'https://www.stanford.edu/',
+            title: 'Pitt research highlights digital divide in access to virtual mental health care services',
+            description: 'Interview by: 90.5 WESA',
+            imageUrl: '/images/media1.png',
+            link: 'https://www.wesa.fm/health-science-tech/2024-02-05/digital-divide-mental-health-services',
         }
+        
     ];
 
     const nextSlide = () => {
@@ -41,11 +42,11 @@ const MediaSection = () => {
     return (
         <div className="bg-blue-200 pt-5 pb-10">
             <SectionHeading title="Highlighted Media"/>
-            <div className="mt-5 mx-20 flex flex-col items-center justify-center">
+            <div className="mt-5 mx-15 flex flex-col items-center justify-center">
                 <div className="relative w-full overflow-hidden">
                     <div className=" flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}  >
                         {cards.map((card, index) => (
-                            <div key={index} className="min-w-full flex-shrink-0 p-4 ">
+                            <div key={index} className="min-w-full flex-shrink p-4 ">
                                 <motion.div
                                     initial={{ y: 50, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
@@ -57,11 +58,11 @@ const MediaSection = () => {
                                             width="300"
                                             src={card.imageUrl}
                                         />
-                                        <h3 className="text-2xl font-bold mb-2">
+                                        <h3 className="text-2xl text-center font-bold mb-2">
                                             {card.title}
                                         </h3>
                                         <p
-                                            className="text-center p-2">
+                                            className="text-center mb-2 p-2">
                                             {card.description}
                                         </p>
                                         <div className="w-full h-full text-center rounded-xl hover:scale-105 transition-transform duration-200">
@@ -78,7 +79,7 @@ const MediaSection = () => {
                         ))}
                     </div>
                     <div
-                        className="absolute top-1/2 left-0 transform -translate-y-1/2 w-full flex justify-between px-4">
+                        className="absolute top-1/2 transform -translate-y-1/2 w-full flex justify-between px-4 md:px-40">
                         <button onClick={prevSlide}
                             className="bg-white rounded-full p-2 shadow-md">
                             &#8592;
