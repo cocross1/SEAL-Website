@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { useCallback, useMemo } from "react";
-import Heading from "./Heading";
 import Button from "./Button";
 import { useRouter } from "next/navigation";
+import SubHeading from "./SubHeader";
 
 interface InitiativeCardProps {
   title:string,
@@ -36,19 +36,8 @@ const InitiativeCard: React.FC<InitiativeCardProps> = ({
       
       className="px-5 flex flex-col text-white gap-2 w-full overflow-hidden mt-10 rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200"
     >
-        <Heading title={title} />
+        <SubHeading text={title} />
       <div className="w-full h-full">
-        {/* <div className="w-full relative overflow-hidden rounded-xl">
-          <Image
-            layout="responsive"
-            width={500}
-            height={200}
-            alt="Room"
-            src={imageSrc}
-            className="object-cover group-hover:scale-110 transition"
-          />
-
-        </div> */}
         <div   className="w-full h-full text-center rounded-xl hover:scale-105 transition-transform duration-200">
         <button
         disabled={disabled}

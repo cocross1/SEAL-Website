@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import Modal from "./Modal";
-import Heading from "../Heading";
+// import Heading from "../Heading";
 import { toast } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import Button from "../Button";

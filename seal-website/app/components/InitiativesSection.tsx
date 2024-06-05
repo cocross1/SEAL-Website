@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Heading from './Heading';
+//import Heading from './Heading';
 import NavbarSection from './navbar/NavbarSection';
 import Button from './Button';
 import Image from "next/image";
@@ -21,10 +21,10 @@ const InitiativesSection = () => {
         <div className="
                  mt-5
                  mx-20
-                 grid grid-cols-2 
                  gap-4
                  items-center
-                 justify-items-center">
+                 justify-items-center
+                 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
 
         <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">
         <motion.div

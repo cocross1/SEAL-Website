@@ -112,7 +112,7 @@ const Modal: React.FC<ModalProps> = ({
                         hover:opacity-70
                         transition
                         absolute
-                        left-9">
+                        right-9">
                             <IoMdClose size={18}/>
                         </button>)}
                         <div className="text-4xl text-center font-semibold">

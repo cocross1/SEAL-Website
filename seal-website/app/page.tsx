@@ -18,10 +18,8 @@ export default function Home() {
             </section>
             <section id="initiatives">
                 <InitiativesSection />
-                {/* Content for Initiatives */}
             </section>
             <section id="partners">
-                {/* <SectionHeading title="Partners" /> */}
                 <PartnersSection />
             </section> 
             <section id="media">

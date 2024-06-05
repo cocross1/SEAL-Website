@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useCallback, useMemo } from "react";
 import useBio from "../hooks/useBio";
-import Heading from "./Heading";
+import SubHeader from './SubHeader';
 import Button from "./Button";
 import { useRouter } from "next/navigation";
 
@@ -27,7 +27,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         className="flex flex-col gap-2 overflow-hidden rounded-xl"
         onClick={() => { bioModal.onOpen(name, bio) }}
       >
-        <Heading title={name} />
+        <SubHeader text={name} />
         <div className="relative overflow-hidden rounded-xl mx-auto w-32 h-32">
           <Image
             layout="fill"
