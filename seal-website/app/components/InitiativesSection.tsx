@@ -17,7 +17,11 @@ const InitiativesSection = () => {
     const body4 = "Focus on creating policy briefs for all of the above projects as well as other salient ideas. This team will meet with all of the other project committees to distill findings from our reports, interviews with key opinion leaders, and general information sessions into tangible briefs that can be disseminated to policymakers at both a local and national scale."
     return (
       <div className="bg-blue-200 pt-5 pb-20">
-        <SectionHeading title="Initiatives" />
+        <div className="flex items-center">
+          <div className="grow border-b-4 border-blue-900 pt-5 mx-10"></div>
+            <SectionHeading title="Initiatives" />
+          <div className="grow border-b-4 border-blue-900 pt-5 mx-10"></div>
+        </div>
         <div className="
                  mt-5
                  mx-20
@@ -59,7 +63,6 @@ const InitiativesSection = () => {
                   >
                     <InitiativeCard link="/initiatives/global_delivery" title="Assessing Global Care Delivery" imageSrc="/placeholder.png" body={[body3]}/>
                     
-
               </motion.div>
               </div>
               <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">
