@@ -32,13 +32,13 @@ const MediaSection = () => {
     const nextSlide = () => {
         setCurrentSlide((prev) => (prev === cards.length - 1 ? 0 : prev + 1));
     };
-
+    
     const prevSlide = () => {
         setCurrentSlide((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
     };
-
+    
     const router = useRouter();
-
+    
     return (
         <div className="bg-blue-200 pt-5 pb-10">
             <SectionHeading title="Highlighted Media"/>
@@ -50,26 +50,18 @@ const MediaSection = () => {
                                 <motion.div
                                     initial={{ y: 50, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
-                                    transition={{ duration: 0.8, ease: 'easeInOut' }}
-                                >
+                                    transition={{ duration: 0.8, ease: 'easeInOut' }}>
                                     <div className="flex flex-col items-center">
                                         <Image alt={card.title} className=" transition rounded-xl mb-4"
                                             height="300"
                                             width="300"
                                             src={card.imageUrl}
                                         />
-                                        <h3 className="text-2xl text-center font-bold mb-2">
-                                            {card.title}
-                                        </h3>
-                                        <p
-                                            className="text-center mb-2 p-2">
-                                            {card.description}
-                                        </p>
+                                        <h3 className="text-2xl text-center font-bold mb-2"> {card.title} </h3>
+                                        <p className="text-center mb-2 p-2"> {card.description} </p>
                                         <div className="w-full h-full text-center rounded-xl hover:scale-105 transition-transform duration-200">
-                                            <button
-                                                onClick={() => router.push(card.link)}
-                                                className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4"
-                                            >
+                                            <button onClick={() => router.push(card.link)} 
+                                                className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4">
                                                 Read More
                                             </button>
                                         </div>
