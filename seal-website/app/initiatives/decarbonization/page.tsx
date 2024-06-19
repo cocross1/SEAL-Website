@@ -4,18 +4,9 @@ import Client from "./Client";
 
 
 const DecarbonizationPage = async () => {
-
-
-
         return(
             <Client />
         )
-    
-
-    
-
-
-    
 }
 
 export default DecarbonizationPage;

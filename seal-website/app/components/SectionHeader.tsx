@@ -9,7 +9,7 @@ interface SectionHeadingProps{
 }
 
 const font = Inria_Serif({
-  weight:'300',
+  weight:'400',
   display: 'swap',
   subsets: ['latin']
 });
@@ -20,7 +20,7 @@ const SectionHeading: React.FC<SectionHeadingProps> = ({title, center}) => {
   return (
     <div className={center ? 'text-center' : 'text-start'}>
         <div className={font.className}>
-        <div className='text-5xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl font-bold text-center mt-10 mb-5'>
+        <div className='text-5xl xs:text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl  text-center mt-10 mb-5'>
             {title}
         </div>
         </div>
