@@ -29,7 +29,7 @@ const InitiativesSection = () => {
                  items-center
                  justify-items-center
                  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
-
+        
         <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
@@ -39,7 +39,7 @@ const InitiativesSection = () => {
                   >
                     <InitiativeCard link="/initiatives/mental_health" title="Addressing Mental Health and the Digital Divide" imageSrc="/placeholder.png" body={[body1,body1proj2]}/>
                     
-
+              
               </motion.div>
               </div>
               <div className="bg-blue-900 w-full h-full mt-10 rounded-xl">

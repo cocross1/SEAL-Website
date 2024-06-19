@@ -2,39 +2,47 @@
 import React from 'react';
 import Image from "next/image";
 import { motion } from 'framer-motion';
-import SectionHeading from '@/app/components/SectionHeader';
 import Publication from '@/app/components/Publication';
+import InitHeader from  '@/app/components/InitHeader';
+import InitLabel from '@/app/components/InitLabel';
+import InitBody from '@/app/components/InitBodyText';
+import SectionDivider from '@/app/components/SectionDivider';
 
 const Client = () => {
-    const proj1 = "Project 1: Currently working on a white paper that would assess the current landscape of mental health screening and the need for a framework and further change, followed by a framework that would guide universities through the intricate process of screening tools. We hope to create a ground-up approach where students on campuses (through campus organizations like Active Minds) can advocate for change in their school’s current resources for mental health. The ultimate goal through these measures is to accelerate the dissemination of resources and information to be adopted across numerous starting from the ground up. We are currently in active collaboration with the Mary Christie Institute, and are continuing conversations with Active Minds and Penn State Collegiate Center on Mental Health."
-    const proj2 = "Project 2: Telemedicine has greatly improved mental healthcare access worldwide, particularly following the COVID-19 pandemic. However, the growing reliance on broadband internet-based mental health care raises concerns surrounding telemedicine’s accessibility in communities already facing barriers in seeking mental health information and care. Our goal is to create provisions for mental health support in current broadband legislation, such as the Affordable Connectivity Program."
     return (
         <div>
-        <SectionHeading title="Adressing Mental Health and the Digital Divide" />
+        <InitLabel title="Initiatives" />
+        <InitHeader title="Adressing Mental Health and the Digital Divide" />
         <div className="
-                 mt-10
-                 mx-20
-                 grid grid-row-2 
-                 gap-4
-                 justify-items-center">
-                    
-              <div className=" text-4xl">
-              <div className=" text-4xl underline font-bold text-center">
-            Initiative Projects
+          mt-10
+          mx-10
+          grid gap-4
+          justify-items-center
+          grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-rows gap-4">
+            <InitBody text="1 out of every 4 people will be impacted by mental illness at some point in their lives…"/>
+            <InitBody text="and we are studying how to expand access to much-needed care by improving screening and filling provider shortages."/>
+            <InitBody text="First, we are collaborating with universities to expand access to mental health screening. In 2024, we published a whitepaper that assesses the current landscape of mental health screening tools available to college campuses and considerations to account for when implementing them. We are now working with our national partners to engender student advocacy across universities to implement standardized mental health screening."/>
+            <InitBody text="Second, we are researching opportunities to improve access to mental health care through new models of care, such as digital health and telehealth. Studying care models across the world will lend insight to policymakers and stakeholders on best practices to expand mental health access."/>
+            <InitBody text="Third, we are using national and global data to draw connections between common chronic conditions and mental health disorders, including for cancer and chronic obstructive pulmonary disease."/>
+            </div>
+          <div>
+          <div className="flex justify-center items-center">
+            <Image alt="Emissions figure" 
+            className="transition rounded-xl"
+            height="500"
+            width="500"
+            src="/images/MH-fig1.png"/>
+          </div>
+          <Image alt="Emissions figure" 
+            className="transition rounded-xl"
+            height="500"
+            width="500"
+            src="/images/MH-fig2.png"/>
         </div>
-            <div className="mt-10">
-                {proj1}
-                </div>
-                <div className="mt-10">
-                {proj2}
-                </div>
-              </div>
-
-
-        <div className="">
-        <div className="mt-10 text-center text-4xl underline font-bold">
-            Publications
         </div>
+        <SectionDivider text="Publications"/>
+        <div>
         <div className="flex flex-row pt-5 grid
                grid-cols-1 md:grid-cols-2 lg:grid-cols-3
                gap-6">
@@ -90,7 +98,7 @@ const Client = () => {
               </div>
               </div>
                 </div>
-        </div>
+      
 );
 };
 
