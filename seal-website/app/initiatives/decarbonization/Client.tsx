@@ -34,13 +34,8 @@ const Client = () => {
             src="/images/HD-fig.png"/>
           </div>
         </div>
-
-        
         <div>
-        {/* <div className="flex items-center"> */}
-        <SectionDivider text="Publications"/>
-        {/* </div> */}
-
+          <SectionDivider text="Publications"/>
         <div className="flex flex-row pt-5 grid
                grid-cols-1 md:grid-cols-2 lg:grid-cols-3
                gap-6">

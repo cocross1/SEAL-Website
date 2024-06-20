@@ -29,6 +29,7 @@ const TeamSection = () => {
       "Beyond her work in healthcare equity, Sruthi is also invested in advancing cancer research. She specialized in Cancer, Genetic Diseases and Immunology during her time in Cambridge, where she explored the intersections between genetic diseases, cancer and immunology. She is now working with doctors in Singapore in using results from the latest immunofluorescence technology to identify factors associated with cancer immunotherapy response.",
       "Lastly, Sruthi is interested in exploring MedTech innovation, and has taken part in the MedTech Innovation Programme involving key speakers from the Cambridge Judge Business School and Start Codon. She hopes to use some of the knowledge and skills gained in future projects. In her free time, Sruthi enjoys going on walks, and cooking."
     ]
+    const anya=["Anya Khemlani, from Rye, New York, is majoring in Computer Science and Behavioral Neuroscience at Northeastern University’s Khoury College of Computer Science. Anya has neurodegenerative research experience at Columbia University’s Motor Neuron Center, as well as Weill Cornell Medicine’s Burke Neurological Institute. She currently holds a position as a research assistant at Northestern’s Movement Neuroscience Laboratory, where she is helping to conduct Amyotrophic Lateral Sclerosis research. Involved on campus as the co-vice president of the Northeastern University Researchers of Neuroscience club, Anya is hoping to conduct computational neuroscience research in the future. Her original involvement with S.E.A.L was to help build this website, alongside Connor Cross and Alissa Rogozin. Anya is looking forward to contributing to more healthcare policy research through the think tank, and she is excited about the opportunities coming up in the near future. In her free time, Anya loves to dance, listen to music, go to concerts, and spend time with her friends. "]
     const aakash = [" Dr. Aakash Shah is a practicing emergency room doctor at Hackensack Meridian Health. He helped treat some of the earliest confirmed cases of COVID-19 during the pandemic. Aakash also serves as the Director of Addiction Medicine and the Medical Director of Project HEAL (a hospital-based violence intervention program) at Jersey Shore University Medical Center as well as the Medical Director of New Jersey Reentry Corp. His work in those roles has resulted in several reforms, including the elimination of prior authorization requirements for medications for opioid use disorder, and he received the bipartisan endorsement of five former New Jersey governors. He previously served as the Founder and Executive Director of Be Jersey Strong, which represented one of the largest and most diverse efforts to connect the uninsured to coverage in the nation, and was honored by President Barack Obama at the White House for its impact. He has also served as an advisor to several local, state, and federal campaigns and policymakers. He obtained his M.D. from Harvard Medical School, M.B.A. and M.Sc. in Comparative Social Policy from Oxford University as a Rhodes Scholar, and B.A. and B.S. from Ursinus College. He was awarded an honorary doctorate from Centenary University."]
    const alister=["Dr. Alister Martin is an emergency room physician and an esteemed academic, serving as an Assistant Professor at both Harvard Medical School and Harvard Kennedy School. His illustrious career includes a tenure as Chief Resident at Massachusetts General Hospital. A former White House Fellow and Health Policy Aide, Dr. Martin has served in influential roles under the Biden Administration, Governor Peter Shumlin of Vermont, and Congressman Raul Ruiz of California. His unique blend of expertise in politics, policy, and behavioral economics positions him perfectly to leverage healthcare settings for social change. Dr. Martin is the visionary founder of Vot-ER, a trailblazing voter registration initiative that has mobilized a network of over 50,000 healthcare providers and 700 institutions. At A Healthier Democracy, he leads with a commitment to use healthcare as a platform for building programs and movements dedicated to the welfare of vulnerable patients."]
    const kedar=["With over 20 years of experience in healthcare management, public health, and healthcare quality improvement, Dr. Kedar Mate leads the Institute for Healthcare Improvement (IHI) as its President and CEO. IHI is a global organization that uses improvement science to advance and sustain equitable outcomes in health and health systems across the world. He also co-hosts the \"Turn On The Lights\" podcast, where he explores the intersection of health, social justice, and leadership with inspiring guests from diverse backgrounds and fields. Additionally, Kedar co-leads the Rise to Health Coalition, a national health equity initiative by IHI, AMA, and Race Forward that aims to catalyze individuals and organizations committed to health equity and justice to take action. Kedar is passionate about creating health-creating systems that address the social determinants of health, foster collaboration and learning, and promote innovation and excellence."]
@@ -50,7 +51,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Tej Patel" bio={[tej]} imageSrc="/images/Tej Patel.jpeg" />
+                  <ProfileCard name="Tej Patel" bio={[tej]} imageSrc="/images/Tej Patel.jpeg" linkedIn="https://www.linkedin.com/in/tej-a-patel/" email="tapatel@wharton.upenn.edu" googleScholar="https://www.researchgate.net/profile/Tej-Patel-16" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -100,6 +101,30 @@ const TeamSection = () => {
                 >
                   <ProfileCard name="Aaryan Shah" bio={placeholder}  />
         </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+                  <ProfileCard name="Connor Cross" bio={placeholder} linkedIn="https://www.linkedin.com/in/connor-cross-950116236/" gitHub="https://github.com/cocross1" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+                  <ProfileCard name="Anya Khemlani" bio={anya} imageSrc="/images/anya.png" linkedIn="https://www.linkedin.com/in/anya-khemlani/"  gitHub="https://github.com/AnyaKhemlani" email="khemlani.a@northeastern.edu"/>
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+                  <ProfileCard name="Alissa Rogozin" bio={placeholder}  />
+        </motion.div>
       </div>
       <div className="text-4xl underline font-bold text-center mt-10 ">
           Team Advisors
@@ -114,7 +139,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Aakash Shah" bio={aakash}  />
+                  <ProfileCard name="Aakash Shah" bio={aakash} imageSrc="/images/akash.jpg" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
