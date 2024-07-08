@@ -13,6 +13,7 @@ interface ProfileCardProps {
   email?: string;
   googleScholar?: string;
   gitHub?: string;
+  twitter?: string;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({
@@ -22,7 +23,8 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   linkedIn,
   email,
   googleScholar,
-  gitHub
+  gitHub,
+  twitter
 }) => {
   const router = useRouter();
   const bioModal = useBio();
@@ -31,7 +33,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
     <div className="bg-blue-300 w-full max-w-sm mx-auto mt-5 rounded-xl p-5 cursor-pointer hover:scale-110 transition-transform duration-200">
       <div
         className="flex flex-col gap-2 overflow-hidden rounded-xl"
-        onClick={() => { bioModal.onOpen(name, bio, linkedIn, email, googleScholar, gitHub) }}
+        onClick={() => { bioModal.onOpen(name, bio, linkedIn, email, googleScholar, gitHub, twitter) }}
       >
         <SubHeader text={name} />
         <div className="relative overflow-hidden rounded-xl mx-auto w-32 h-32">

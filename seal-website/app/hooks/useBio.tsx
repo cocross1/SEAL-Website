@@ -28,7 +28,8 @@ interface BioModalStore {
   email?: string;
   googleScholar?: string;
   gitHub?: string;
-  onOpen: (name: string, bio: string[], linkedIn?: string, email?: string, googleScholar?: string, gitHub?: string) => void;
+  twitter?: string;
+  onOpen: (name: string, bio: string[], linkedIn?: string, email?: string, googleScholar?: string, gitHub?: string, twitter?:string) => void;
   onClose: () => void;
 }
 
@@ -40,14 +41,16 @@ const useBio = create<BioModalStore>((set) => ({
   email: undefined,
   googleScholar: undefined,
   gitHub: undefined,
-  onOpen: (name: string, bio: string[], linkedIn?: string, email?: string, googleScholar?: string, gitHub?: string) => set({
+  twitter: undefined,
+  onOpen: (name: string, bio: string[], linkedIn?: string, email?: string, googleScholar?: string, gitHub?: string, twitter?: string) => set({
     isOpen: true,
     name: name,
     bio: bio,
     linkedIn: linkedIn,
     email: email,
     googleScholar: googleScholar,
-    gitHub: gitHub
+    gitHub: gitHub,
+    twitter: twitter
   }),
   onClose: () => set({ isOpen: false })
 }));
