@@ -6,6 +6,7 @@ import AboutSection from "./components/AboutSection";
 import MediaSection from "./components/MediaSection";
 import InitiativesSection from "./components/InitiativesSection";
 import PartnersSection from "./components/PartnersSection";
+import EventSection from "./components/Events";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
             </section> 
             <section id="media">
                 <MediaSection />
+            </section> 
+            <section id="events">
+                <EventSection />
             </section> 
         </div>
   );

@@ -27,6 +27,7 @@ const Navbar = () => {
               <NavbarSection title="Partners" href="#partners" />
               {/* <NavbarSection title="Media" onClick={() => router.push('/media')} /> */}
               <NavbarSection title="Media"  href="#media" />
+              <NavbarSection title="Events"  href="#events" />
               <NavbarSection title="Contact Us" onClick={()=>{contactModal.onOpen()}} />
             </div>
             <div className="flex xl:hidden">

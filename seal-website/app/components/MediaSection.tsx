@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeader';
-import { useRouter } from "next/navigation";
 
 const MediaSection = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -37,8 +36,6 @@ const MediaSection = () => {
         setCurrentSlide((prev) => (prev === 0 ? cards.length - 1 : prev - 1));
     };
     
-    const router = useRouter();
-    
     return (
         <div className="bg-blue-200 pt-5 pb-10">
             <SectionHeading title="Highlighted Media"/>
@@ -60,10 +57,13 @@ const MediaSection = () => {
                                         <h3 className="text-2xl text-center font-bold mb-2"> {card.title} </h3>
                                         <p className="text-center mb-2 p-2"> {card.description} </p>
                                         <div className="w-full h-full text-center rounded-xl hover:scale-105 transition-transform duration-200">
-                                            <button onClick={() => router.push(card.link) }
+                                            <a 
+                                                href={card.link} 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
                                                 className="bg-blue-900 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded-xl w-1/2 h-full lg:w-1/4">
                                                 Read More
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </motion.div>
