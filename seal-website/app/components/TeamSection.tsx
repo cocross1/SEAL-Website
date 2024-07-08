@@ -1,12 +1,9 @@
 'use client'
 import React from 'react';
-import NavbarSection from './navbar/NavbarSection';
-import Button from './Button';
-import Image from "next/image";
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeader';
-import InitiativeCard from './InitiativeCard';
 import ProfileCard from './ProfileCard';
+import SectionDivider from './SectionDivider';
 
 const TeamSection = () => {
    const tej = "Tej Patel, from Billerica, Massachusetts, is majoring in Molecular Biology, Healthcare Management & Policy, and Statistics through the Life Sciences and Management Program at the University of Pennsylvania and the Wharton School. Inspired by firsthand experiences as a volunteer and advocate, Tej seeks to make healthcare systems more patient-centric and cost-effective. His research, published in top journals including Nature Medicine, JAMA Health Forum, and Journal of National Cancer Institute, spans multiple domains, including radiation oncology, health economics, and care delivery. Tej is affiliated with Penn Medicine's Radiation Oncology and Breast Surgery Departments, where he examines Medicare spending for radiation schedules and advocates for value-based practices. As a key member of the Human Algorithm Collaboration (HAC) Lab, he also leads studies on behavioral nudges in cancer care and develops new outcome-labeling strategies for improved algorithm performance. Beyond research, Tej serves as the director of Locust Bioventures, a student-led consulting group supporting scientific ventures from the Perelman School of Medicine. He is also a lead coordinator for the Netter Center Pipeline program, where he develops new curricula and teaches high school students in the Philadelphia school systems about the intersection of life sciences and business. In his free time, Tej loves to play basketball/volleyball, play new songs on his guitar, and spend time with his family."
@@ -39,9 +36,7 @@ const TeamSection = () => {
       flex flex-col gap-6
       mt-10 p-4">
       <SectionHeading title="Our Team" />
-      <div className="text-4xl underline font-bold text-center ">
-          Team Members
-      </div>
+      <SectionDivider text="Team Members"/>
       <div className="
                grid
                grid-cols-1 md:grid-cols-2 lg:grid-cols-3
@@ -127,9 +122,7 @@ const TeamSection = () => {
                   <ProfileCard name="Alissa Rogozin" bio={alissa} imageSrc="/images/alissa.png" linkedIn="https://www.linkedin.com/in/alissa-rogozin"  gitHub="https://github.com/alissarogozin25" email="rogozin.a@northeastern.edu"/>
         </motion.div>
       </div>
-      <div className="text-4xl underline font-bold text-center mt-10 ">
-          Team Advisors
-      </div>
+      <SectionDivider text="Our Advisors"/>
       <div className="
                grid
                grid-cols-1 md:grid-cols-2 lg:grid-cols-3

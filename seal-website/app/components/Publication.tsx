@@ -6,28 +6,25 @@ interface PublicationProps {
     img: string;
     href: string;
     alt?: string; // This should be the id selector like "#about"
-
 }
 
-
-
 const Publication: React.FC<PublicationProps> = ({ img, href, alt }) => {
-
-
     return (
-        <a href={href} className="mt-10 flex items-center justify-center w-full h-full bg-gray-200 rounded-xl hover:bg-blue-300 transition duration-150 ease-in-out transform hover:scale-125 mt-3 py-2 px-4 text-center text-2xl font-bold">
-            {/*       className="px-5 flex flex-col text-white gap-2 w-full overflow-hidden mt-10 rounded-xl cursor-pointer hover:scale-105 transition-transform duration-200"
- */}
+        <a 
+            href={href} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mt-10 flex items-center justify-center w-5/6 h-full bg-gray-200 rounded-xl hover:bg-blue-300 transition duration-150 ease-in-out transform hover:scale-110 mt-3 py-2 px-4 text-center text-xl font-bold"
+        >
             <Image
                 alt={alt ? alt : "Publication"}
-                height={400}
-                width={400}
+                height={300}  // Reduced height
+                width={300}   // Reduced width
                 src={img}
                 className="transition-transform duration-150 ease-in-out"
             />
         </a>
     );
-} 
-
+}
 
 export default Publication;
