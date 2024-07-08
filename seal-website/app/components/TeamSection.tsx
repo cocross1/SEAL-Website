@@ -47,7 +47,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Tej Patel" bio={[tej]} imageSrc="/images/Tej Patel.jpeg" linkedIn="https://www.linkedin.com/in/tej-a-patel/" email="tapatel@wharton.upenn.edu" googleScholar="https://www.researchgate.net/profile/Tej-Patel-16" />
+                  <ProfileCard name="Tej Patel" bio={[tej]} imageSrc="/images/Tej Patel.jpeg" linkedIn="https://www.linkedin.com/in/tej-a-patel/" email="tapatel@wharton.upenn.edu" googleScholar="https://scholar.google.com/citations?user=gt6RPysAAAAJ&hl=en&oi=ao" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -55,7 +55,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Bhav Jain" bio={bhav} imageSrc="/images/BJ_Headshot_1.jpg" />
+                  <ProfileCard name="Bhav Jain" bio={bhav} imageSrc="/images/BJ_Headshot_1.jpg" linkedIn="https://www.linkedin.com/in/bhavjain/" email="bhavjain@stanford.edu" googleScholar="https://scholar.google.com/citations?hl=en&user=FosmlwsAAAAJ&view_op=list_works"/>
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -63,7 +63,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Aravind Krishnan" bio={aravind} imageSrc="/images/aravind.jpg" />
+                  <ProfileCard name="Aravind Krishnan" bio={aravind} imageSrc="/images/aravind.jpg" linkedIn="https://www.linkedin.com/in/aravind-m-krishnan/" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -87,7 +87,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Sruthi Ranganathan" bio={sruthi} imageSrc="/images/Sruthi Ranganathan.jpg" />
+                  <ProfileCard name="Sruthi Ranganathan" bio={sruthi} imageSrc="/images/Sruthi Ranganathan.jpg" linkedIn="https://www.linkedin.com/in/sruthi-ranganathan-9243441b7/"/>
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
