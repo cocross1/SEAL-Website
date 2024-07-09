@@ -26,7 +26,7 @@ export default function RootLayout({
         <InitiativeModal/>
         
         </ClientOnly>
-        <div className="pb-20 pt-28">
+        <div className=" pt-28">
           {children}
         </div>
       </body>

@@ -98,6 +98,16 @@ const Menu = () => {
                                 label="Media"
                             />
                             <MenuItem
+                                //onClick={() => router.push('/media')}
+                                href="#events"
+                                label="Events"
+                            />
+                            <MenuItem
+                                //onClick={() => router.push('/media')}
+                                href="#connect"
+                                label="Connect"
+                            />
+                            <MenuItem
                                 onClick={contactModal.onOpen}
                                 label="Contact Us"
                             />

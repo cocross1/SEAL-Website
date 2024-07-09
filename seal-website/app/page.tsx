@@ -1,12 +1,10 @@
-import Image from "next/image";
-import SectionHeading from "./components/SectionHeader";
 import HeroSection from "./components/HeroSection";
-import { motion } from 'framer-motion';
 import AboutSection from "./components/AboutSection";
 import MediaSection from "./components/MediaSection";
 import InitiativesSection from "./components/InitiativesSection";
 import PartnersSection from "./components/PartnersSection";
 import EventSection from "./components/Events";
+import ConnectSection from "./components/ConnectSection";
 
 export default function Home() {
   return (
@@ -28,6 +26,9 @@ export default function Home() {
             </section> 
             <section id="events">
                 <EventSection />
+            </section> 
+            <section id="connect">
+                <ConnectSection />
             </section> 
         </div>
   );

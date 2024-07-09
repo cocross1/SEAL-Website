@@ -9,7 +9,7 @@ const Logo = () => {
   alt="Logo"
   className=" justify-center md:block cursor-pointer
   transition rounded-xl"
-  width="300"
+  width="250"
   height="100"
   src="/images/H-logo.png"
   />

@@ -52,7 +52,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = ({ title, href, onClick }) =
     if (href) {
         return (
             <a href={href} onClick={handleClick} className="text-center p-5 justify-center md:block cursor-pointer hover:bg-gray-300 transition rounded-xl">
-                <div className='text-2xl font-bold text-center'>
+                <div className='text-[20px] font-bold text-center'>
                     {title}
                 </div>
             </a>
@@ -62,7 +62,7 @@ const NavbarSection: React.FC<NavbarSectionProps> = ({ title, href, onClick }) =
     if (onClick) {
         return (
             <button onClick={onClick} className="text-center p-5 justify-center md:block cursor-pointer hover:bg-gray-300 transition rounded-xl">
-                <div className='text-2xl font-bold text-center'>
+                <div className='text-[20px] font-bold text-center'>
                     {title}
                 </div>
             </button>
