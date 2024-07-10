@@ -5,9 +5,10 @@ import InitiativesSection from "./components/InitiativesSection";
 import PartnersSection from "./components/PartnersSection";
 import EventSection from "./components/Events";
 import ConnectSection from "./components/ConnectSection";
+import Transition from "./components/Transition";
 
 export default function Home() {
-  return (
+    return (
         <div>
             <section id="main">
                 <HeroSection />
@@ -20,16 +21,19 @@ export default function Home() {
             </section>
             <section id="partners">
                 <PartnersSection />
-            </section> 
+            </section>
             <section id="media">
                 <MediaSection />
-            </section> 
+            </section>
             <section id="events">
                 <EventSection />
-            </section> 
+            </section>
+            <div>
+                <Transition color1="white" color2="#BFDBFE" />  {/* Using hex value for blue-200 */}
+            </div>
             <section id="connect">
                 <ConnectSection />
-            </section> 
+            </section>
         </div>
-  );
+    );
 }

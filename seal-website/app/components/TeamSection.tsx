@@ -133,7 +133,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Aakash Shah" bio={aakash} imageSrc="/images/akash.jpg" />
+                  <ProfileCard name="Aakash Shah" bio={aakash} imageSrc="/images/akash.jpg" linkedIn="https://www.linkedin.com/in/aakash-shah-8ba2b355/" twitter="https://x.com/Aakash_K_Shah"/>
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -141,7 +141,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Alister Martin" bio={alister} imageSrc="/images/alister.png" />
+                  <ProfileCard name="Alister Martin" bio={alister} imageSrc="/images/alister.png" linkedIn="https://www.linkedin.com/in/alister-martin-41b1369a/" twitter="https://x.com/AlisterFMartin"/>
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -149,7 +149,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Kedar Mate" bio={kedar} imageSrc="/images/kedar.png" />
+                  <ProfileCard name="Kedar Mate" bio={kedar} imageSrc="/images/kedar.png" linkedIn="https://www.linkedin.com/in/kedarmatemd/" twitter="https://x.com/KedarMate"/>
         </motion.div>
       </div>
       </div>

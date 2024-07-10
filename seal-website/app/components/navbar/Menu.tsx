@@ -93,17 +93,14 @@ const Menu = () => {
                                 label="Partners"
                             />
                             <MenuItem
-                                //onClick={() => router.push('/media')}
                                 href="#media"
                                 label="Media"
                             />
                             <MenuItem
-                                //onClick={() => router.push('/media')}
                                 href="#events"
                                 label="Events"
                             />
                             <MenuItem
-                                //onClick={() => router.push('/media')}
                                 href="#connect"
                                 label="Connect"
                             />
