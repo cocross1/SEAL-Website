@@ -45,7 +45,7 @@ const Client = () => {
         <div>
         <div className="flex flex-row pt-5 grid
                grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-               gap-6">
+               gap-6 pb-10">
         <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}

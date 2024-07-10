@@ -43,7 +43,7 @@ const Client = () => {
           </div>
           </div>
         </div>
-
+        
         <SectionDivider text="Publications"/>
         
             <div className="
@@ -51,7 +51,8 @@ const Client = () => {
                  mx-20
                  grid grid-row-2 
                  gap-4
-                 justify-items-center">
+                 justify-items-center
+                 ">
                         
             
             <div>
@@ -60,7 +61,7 @@ const Client = () => {
         
         <div className="flex flex-row pt-5 grid
                grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-               gap-6">
+               gap-6 pb-10">
             
             <motion.div
                         initial={{ y: 50, opacity: 0 }}
