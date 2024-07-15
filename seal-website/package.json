@@ -1,14 +1,14 @@
 {
   "name": "seal-website",
-  "homepage": "https://github.com/AnyaKhemlani/githib.io/SEAL-Website",
+  "homepage": "http://AnyaKhemlani.githib.io/SEAL-Website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "build": "next build",
     "lint": "next lint"
   },
   "dependencies": {
