@@ -6,6 +6,7 @@
 // next.config.mjs
 export default {
     output: 'export',
+    base: "/SEAL-website",
     basePath: '/seal-website',
     assetPrefix: '/seal-website/',
 };
