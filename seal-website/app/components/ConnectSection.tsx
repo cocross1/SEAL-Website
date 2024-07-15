@@ -1,10 +1,7 @@
 'use client'
 
 import React from 'react';
-import { useRouter } from "next/navigation";
-import Button from './Button';
 import SectionHeading from './SectionHeader';
-import SubHeader from './SubHeader';
 
 const ConnectSection = () => {
     return (

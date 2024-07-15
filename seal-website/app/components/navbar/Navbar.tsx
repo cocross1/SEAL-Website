@@ -16,9 +16,9 @@ const Navbar = () => {
   const contactModal = useContact();
   return (
     <div className="fixed w-full h-100 bg-gray-200 p-1 z-10 shadow-sm">
-      <div className="py-4 border-b-[1px]">
+      <div className="py-1 border-b-[1px]">
         <Container>
-          <div className="flex w-full flex-row items-center justify-between gap-3 md:gap-0">
+          <div className="flex w-full flex-row items-center justify-between gap-3 xl:flex">
             <Logo />
             <div className="hidden xl:flex space-x-4">
               <NavbarSection title="About" href="#about" />
