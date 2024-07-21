@@ -19,6 +19,11 @@ export default function RootLayout({
 }>) {
   return (
 <html lang="en">
+      <head>
+        <title>Social Equity Action Lab</title>
+        <link rel="icon" href="/images/icon.png" />
+        {/* You can also add more meta tags, stylesheets, etc. here */}
+      </head>
       <body className={font.className}>
         <ClientOnly>
         <ContactUsModal />
