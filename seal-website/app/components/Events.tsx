@@ -27,17 +27,17 @@ const EventsSection = () => {
                     transition={{ duration: 0.8, ease: "easeInOut" }}
                     className="w-5/6"
                 >
-                    <EventCard
+                    {/* example event card below! */}
+                    {/* <EventCard
                         link="https://stanford.zoom.us/meeting/register/tJMqdeqsqzMuG9AvrwHU55PCbWJutlDJxX9i#/registration"
                         date="July 2nd - 4pm"
                         description="Featuring Dr. Atul Gawande"
-                    />
+                    /> */}
+                    
+                    <div className="text-xl sm:text-2xl md:text-2xl lg:text-4xl xl:text-4xl text-center">
+                        No upcoming events, check back soon!
+                    </div>
 
-                    <EventCard
-                        link="https://stanford.zoom.us/meeting/register/tJMqdeqsqzMuG9AvrwHU55PCbWJutlDJxX9i#/registration"
-                        date="August 5th - 10am"
-                        description="S.E.A.L. Launch Party!"
-                    />
                 </motion.div>
             </div>
         </div>
