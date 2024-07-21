@@ -97,30 +97,8 @@ const TeamSection = () => {
                 >
                   <ProfileCard name="Aaryan Shah" bio={placeholder}  />
         </motion.div>
-        <motion.div
-                  initial={{ y: 50, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
-                >
-                  <ProfileCard name="Connor Cross" bio={placeholder} linkedIn="https://www.linkedin.com/in/connor-cross-950116236/" gitHub="https://github.com/cocross1" />
-        </motion.div>
-        <motion.div
-                  initial={{ y: 50, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
-                >
-                  <ProfileCard name="Anya Khemlani" bio={anya} imageSrc="/images/anya.png" linkedIn="https://www.linkedin.com/in/anya-khemlani/"  gitHub="https://github.com/AnyaKhemlani" email="khemlani.a@northeastern.edu"/>
-        </motion.div>
-        <motion.div
-                  initial={{ y: 50, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  viewport={{ once: false }}
-                  transition={{ duration: 0.8, ease: "easeInOut" }}
-                >
-                  <ProfileCard name="Alissa Rogozin" bio={alissa} imageSrc="/images/alissa.png" linkedIn="https://www.linkedin.com/in/alissa-rogozin"  gitHub="https://github.com/alissarogozin25" email="rogozin.a@northeastern.edu"/>
-        </motion.div>
+        
+        
       </div>
       <SectionDivider text="Our Advisors"/>
       <div className="
@@ -152,7 +130,38 @@ const TeamSection = () => {
                   <ProfileCard name="Kedar Mate" bio={kedar} imageSrc="/images/kedar.png" linkedIn="https://www.linkedin.com/in/kedarmatemd/" twitter="https://x.com/KedarMate"/>
         </motion.div>
       </div>
+      <SectionDivider text="Web Development Team"/>
+      <div className="
+               grid
+               grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+               gap-6">
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+                  <ProfileCard name="Connor Cross" bio={placeholder} linkedIn="https://www.linkedin.com/in/connor-cross-950116236/" gitHub="https://github.com/cocross1" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+                  <ProfileCard name="Anya Khemlani" bio={anya} imageSrc="/images/anya.png" linkedIn="https://www.linkedin.com/in/anya-khemlani/"  gitHub="https://github.com/AnyaKhemlani" email="khemlani.a@northeastern.edu"/>
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+                  <ProfileCard name="Alissa Rogozin" bio={alissa} imageSrc="/images/alissa.png" linkedIn="https://www.linkedin.com/in/alissa-rogozin"  gitHub="https://github.com/alissarogozin25" email="rogozin.a@northeastern.edu"/>
+        </motion.div>
       </div>
+      </div>
+      
     );
 };
 
