@@ -1,11 +1,11 @@
  /** @type {import('next').NextConfig} */
-// const nextConfig = {};
+const nextConfig = {};
 
-// export default nextConfig;
+export default nextConfig;
 
 // next.config.mjs
-export default {
-    base: "/SEAL-website",
-    basePath: '/seal-website',
-    assetPrefix: '/seal-website/',
-};
+// export default {
+//     base: "/SEAL-website",
+//     basePath: '/seal-website',
+//     assetPrefix: '/seal-website/',
+// };
