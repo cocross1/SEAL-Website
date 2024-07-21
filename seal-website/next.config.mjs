@@ -2,10 +2,3 @@
 const nextConfig = {};
 
 export default nextConfig;
-
-// next.config.mjs
-// export default {
-//     base: "/SEAL-website",
-//     basePath: '/seal-website',
-//     assetPrefix: '/seal-website/',
-// };

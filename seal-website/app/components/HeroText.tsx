@@ -1,10 +1,10 @@
 'use client';
 import { Inria_Serif } from "next/font/google";
-import React from 'react'
-import { BiBold } from "react-icons/bi";
+import React from 'react';
 
 interface HeroTextProps {
     text: string,
+    className?: string,
 }
 
 const font = Inria_Serif({
@@ -13,16 +13,14 @@ const font = Inria_Serif({
     subsets: ['latin']
 });
 
-
-
-const HeroText: React.FC<HeroTextProps> = ({ text }) => {
+const HeroText: React.FC<HeroTextProps> = ({ text, className = '' }) => {
     return (
-        <div className={font.className}>
-            <div className="center-left">
+        <div className={`${font.className} ${className}`}>
+            <div className="text-left">
                 {text}
             </div>
         </div>
     )
 }
 
-export default HeroText
+export default HeroText;
