@@ -14,7 +14,7 @@ const Publication: React.FC<PublicationProps> = ({ img, href, alt }) => {
             href={href} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="mt-10 flex items-center justify-center w-5/6 h-full bg-gray-200 rounded-xl hover:bg-blue-300 transition duration-150 ease-in-out transform hover:scale-110 mt-3 py-2 px-4 text-center text-xl font-bold"
+            className="mt-10 flex items-center justify-center w-5/6 h-full bg-blue-200 rounded-xl hover:bg-blue-300 transition duration-150 ease-in-out transform hover:scale-110 mt-3 py-2 px-4 text-center text-xl font-bold"
         >
             <Image
                 alt={alt ? alt : "Publication"}
