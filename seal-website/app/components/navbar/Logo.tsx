@@ -11,7 +11,7 @@ const Logo = () => {
   transition rounded-xl xl:flex"
   width="275"
   height="100"
-  src="/images/H-logo.png"
+  src="/images/H-Logo.png"
   />
 
 }
