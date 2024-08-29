@@ -99,7 +99,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Khushi Kohli" bio={placeholder} imageSrc="/images/Khushi Kohli.jpeg" />
+                  <ProfileCard name="Khushi Kohli" bio={khushi} imageSrc="/images/Khushi Kohli.jpeg" linkedIn="https://www.linkedin.com/in/khushi-kohli-0830/" twitter="https://x.com/khushkohli?lang=en" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -107,7 +107,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Arnav Ajay Jadav" bio={arnav} imageSrc="/images/Khushi Kohli.jpeg" />
+                  <ProfileCard name="Arnav Ajay Jadav" bio={arnav} imageSrc="/images/arnav.jpg" linkedIn="https://www.linkedin.com/in/arnav-ajayjadav/"/>
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -115,7 +115,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-           <ProfileCard name="Alessandro Hammond" bio={alessandro} imageSrc="/images/Khushi Kohli.jpeg" />
+           <ProfileCard name="Alessandro Hammond" bio={alessandro} imageSrc="/images/alessandro.jpg />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -123,7 +123,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-           <ProfileCard name="Faraan Rahim" bio={faraan} imageSrc="/images/Khushi Kohli.jpeg" />
+           <ProfileCard name="Faraan Rahim" bio={faraan} imageSrc="/images/faraan.jpg" linkedIn="https://www.linkedin.com/in/faraan-rahim-3b78941aa/" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -131,7 +131,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-           <ProfileCard name="Seungwon (Lucy) Lee" bio={lucy} imageSrc="/images/Khushi Kohli.jpeg" />
+           <ProfileCard name="Seungwon (Lucy) Lee" bio={lucy} imageSrc="/images/lucy.png" linkedIn="https://www.linkedin.com/in/seungwon-lucy-lee-657495274/" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -139,7 +139,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-           <ProfileCard name="Urvish" bio={urvish} imageSrc="/images/Khushi Kohli.jpeg" />
+           <ProfileCard name="Urvish Jain" bio={urvish} imageSrc="/images/urvish.jpg" linkedIn="https://www.linkedin.com/in/urvishjain/" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -147,7 +147,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-           <ProfileCard name="Aditya Arkalgud" bio={aditya} imageSrc="/images/Khushi Kohli.jpeg" />
+           <ProfileCard name="Aditya Arkalgud" bio={aditya} imageSrc="/images/aditya.jpg" linkedIn="https://www.linkedin.com/in/adityaarkalgud/" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -155,7 +155,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-           <ProfileCard name="Stephanie Wang" bio={stephanie} imageSrc="/images/Khushi Kohli.jpeg" />
+           <ProfileCard name="Stephanie Wang" bio={stephanie} imageSrc="/images/stephanie.jpg" linkedIn="https://www.linkedin.com/in/stephaniewang2004/" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -163,7 +163,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-           <ProfileCard name="Aaryan Shah" bio={aaryan} imageSrc="/images/Khushi Kohli.jpeg" />
+           <ProfileCard name="Aaryan Shah" bio={aaryan} imageSrc="/images/aaryan.jpg" linkedIn = "https://www.linkedin.com/in/aaryanxshah/" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
