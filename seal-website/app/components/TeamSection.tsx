@@ -6,7 +6,7 @@ import ProfileCard from './ProfileCard';
 import SectionDivider from './SectionDivider';
 
 const TeamSection = () => {
-   const tej = "Tej Patel, from Billerica, Massachusetts, is majoring in Molecular Biology, Healthcare Management & Policy, and Statistics through the Life Sciences and Management Program at the University of Pennsylvania and the Wharton School. Inspired by firsthand experiences as a volunteer and advocate, Tej seeks to make healthcare systems more patient-centric and cost-effective. His research, published in top journals including Nature Medicine, JAMA Health Forum, and Journal of National Cancer Institute, spans multiple domains, including radiation oncology, health economics, and care delivery. Tej is affiliated with Penn Medicine's Radiation Oncology and Breast Surgery Departments, where he examines Medicare spending for radiation schedules and advocates for value-based practices. As a key member of the Human Algorithm Collaboration (HAC) Lab, he also leads studies on behavioral nudges in cancer care and develops new outcome-labeling strategies for improved algorithm performance. Beyond research, Tej serves as the director of Locust Bioventures, a student-led consulting group supporting scientific ventures from the Perelman School of Medicine. He is also a lead coordinator for the Netter Center Pipeline program, where he develops new curricula and teaches high school students in the Philadelphia school systems about the intersection of life sciences and business. In his free time, Tej loves to play basketball/volleyball, play new songs on his guitar, and spend time with his family."
+   const tej = "Tej Patel, from Billerica, Massachusetts, is majoring in Molecular Biology, Healthcare Management & Policy, and Statistics through the Life Sciences and Management Program at the University of Pennsylvania and the Wharton School. Inspired by firsthand experiences as a volunteer and advocate, Tej seeks to make healthcare systems more patient-centric and cost-effective. His research, published in top journals including New England Journal of Medicine AI, Nature Medicine, JAMA Health Forum, and Journal of National Cancer Institute, spans multiple domains, including radiation oncology, health economics, and care delivery. Tej is affiliated with Penn Medicine's Radiation Oncology and Breast Surgery Departments, where he examines Medicare spending for radiation schedules and advocates for value-based practices. As a key member of the Human Algorithm Collaboration (HAC) Lab, he also leads studies on behavioral nudges in cancer care and develops new outcome-labeling strategies for improved algorithm performance. Beyond research, Tej serves as the director of SEAL as well as Locust Bioventures, a student-led consulting group supporting scientific ventures from the Perelman School of Medicine. He is also a lead coordinator for the Netter Center Pipeline program, where he develops new curricula and teaches high school students in the Philadelphia school systems about the intersection of life sciences and business, as well as a 2024 Truman Scholar. In his free time, Tej loves to play basketball/volleyball, play new songs on his guitar, and spend time with his family."
     const bhav = ["Bhav Jain, from Pittsburgh, Pennsylvania, is a medical student at Stanford School of Medicine. He lived in Ontario, Canada before immigrating to the United States in the fourth grade. Having traveled to his parents' home of India every year during his childhood, Bhav has been grateful to gain a global, multicultural perspective on pressing social challenges.",
       "He graduated from the Massachusetts Institute of Technology with a bachelor’s degree in computer science and brain & cognitive sciences. Bhav aspires to create high-value, evidence-based healthcare systems and transform clinical care globally as a physician-policymaker. In particular, he seeks to innovate at both public- and private-sector organizations during his career to improve the quality of and lower the cost of patient care. His research on healthcare delivery, social determinants of health, and value-based care has been published in outlets such as Nature Medicine, The Lancet Digital Health, JAMA Oncology, Journal of the National Cancer Institute, American Journal of Public Health, Cancer, Journal of the American College of Surgeons, Journal of General Internal Medicine, and American Journal of Managed Care. Additionally, he has written for Smithsonian Magazine and The Milbank Quarterly Opinion on digital psychiatry and environmental justice.",
       "While at MIT, he launched The Connected Foundation, which forges intergenerational connections between youth and seniors, and Compass, an SMS platform that streamlines patient intake and scheduling. Most recently, he served as a Fellow at the Boston Public Health Commission to implement interventions aimed at curbing substance abuse and homelessness. Bhav is a recipient of the Knight-Hennessy Scholarship, Harry S. Truman Scholarship, Samvid Scholarship, Legatum Fellowship, and 40 Under 40 in Cancer Award. In his free time, Bhav loves cooking, playing tennis, running, and dancing Bhangra, a traditional South Asian folk dance."
@@ -25,6 +25,17 @@ const TeamSection = () => {
       "With these interests, she is engaged in research involving healthcare disparities and policies with individuals from a wide range of institutions such as London School of Economics, Memorial Sloan Kettering Cancer Centre, MOSC Medical College aiming to break down phenomena such as financial toxicity and the implementation of electronic patient health records. Some of her work has been published in JAMA Surgery and Supportive Care in Cancer. She is now looking to make active differences using the findings from some of these research through SEAL.",
       "Beyond her work in healthcare equity, Sruthi is also invested in advancing cancer research. She specialized in Cancer, Genetic Diseases and Immunology during her time in Cambridge, where she explored the intersections between genetic diseases, cancer and immunology. She is now working with doctors in Singapore in using results from the latest immunofluorescence technology to identify factors associated with cancer immunotherapy response.",
       "Lastly, Sruthi is interested in exploring MedTech innovation, and has taken part in the MedTech Innovation Programme involving key speakers from the Cambridge Judge Business School and Start Codon. She hopes to use some of the knowledge and skills gained in future projects. In her free time, Sruthi enjoys going on walks, and cooking."
+   const khushi=["Khushi is a senior at Harvard University from Kansas City, concentrating in Molecular and Cellular with a secondary in Global Health. With HDTT, Khushi serves as the Director of Research for Maternal & Child Health. Outside this role, Khushi conducts research on pediatric leukemia and melanoma at Boston Children’s Hospital, studies cancer health disparities at Memorial Sloan Kettering Hospital, is leading a global health intervention against maternal mortality in Haiti, and spent a summer working in South Africa on an HIV clinical trial. In her free time, Khushi loves DJ-ing for “The Darker Side” radio show on WHRB 95.3 FM, taking walks by the Charles, making Chipotle runs with friends and family, and Tae Kwon Do (she’s a black belt!)."]
+   const arnav=["Arnav Ajay Jadav, from Jacksonville, Florida, is a third-year student at Washington University in St. Louis, majoring in Neuroscience with a strong focus on public health and mental health advocacy. Inspired by his non-profit work with the unhoused population in St. Louis and his role as a mental health advocate for a Bay Area startup, Arnav is dedicated to restructuring the current approach to addressing healthcare inequities, particularly in healthcare access and mental well-being for marginalized populations. He aims to drive health policy changes and aspires to become a physician who can influence both the access and delivery of primary and mental healthcare, as well as a researcher pioneering novel translational approaches to combat severe neurological diseases."]
+   const stephanie=["Stephanie is a junior at Harvard College studying Molecular & Cellular Biology and Global Health & Health Policy. She conducts research on the applications of stem cell technologies for blood cancers at Boston Children's Hospital and improving health equity for patients with cancer. Her work has been published in The Lancet Regional Health - Americas, Clinical Pharmacology and Therapeutics, and more. She is the founder and Executive Director of the Health Disparities Think Tank, a national student-led research and policy advocacy group combatting health disparities."]
+   const alessandro=["Alessandro Hammond is a student at Harvard University and a research fellow at Boston Children’s Hospital, the Broad Institute, and Massachusetts General Hospital. He specializes in using single-cell technology to track genes involved in aggressive tumors and researches health equity. His work has been published in renowned journals such as Nature, Nature Machine Intelligence, Nature Medicine, the Journal of Clinical Oncology, and Frontiers. Alessandro is also the founder of Ivy League Mentoring, a 501(c)(3) nonprofit organization dedicated to supporting underserved youth, which has been featured on Good Morning America and ABC News."]
+   const faraan=["Faraan Rahim is an MD candidate at Harvard Medical School, specializing in global health and health policy. He graduated Summa Cum Laude from Duke University with a Bachelor of Science in Chemistry and a minor in global health. Faraan is dedicated to advancing healthcare in low- and middle-income countries, with a particular focus on sub-Saharan Africa. His research aims to promote awareness of global health challenges and provide evidence-based recommendations to policymakers. He has published over 15 articles in esteemed medical journals, including BMJ, Nature Medicine, AIDS, and the Journal of General Internal Medicine. Raised in Murrysville, Pennsylvania, just outside Pittsburgh, Faraan developed his passion for medicine as an EMT in his hometown and continued his involvement in emergency services through Duke University EMS. In his free time, he enjoys lifting weights and riding his electric skateboard."]
+   const lucy=["As a Neuroscience major at the University of Pennsylvania, Lucy has a great passion for tackling mental health issues from various perspectives, not only as a clinical issue but equally a cultural one. She explains that her childhood experience of living in South Korea, where ‘mental health’ is rarely ever a topic of discussion, fuels her determination to fight against the deeply rooted stigma and stereotypes. As an aspiring physician, she believes that ‘there is no health without mental health’ and hopes to architect tangible support programs for the mental health of all youth across the country and the world."]
+   const urvish=[" "]
+   const aditya=[" "]
+   const aaryan=["Aaryan is a second-year undergraduate student at stanford university interested in developing technologies for healthcare. Throughout his time in high school, he has explored medicine and health from various lenses, including research, special education, and policy. Currently, he is working on projects with the stanford department of neurosurgery and the center for biomedical informatics. His previous research experiences including special education research at san francisco state, biostats research at harvard medical school, and diagnostic device development at stanford department of psychiatry."]
+   
+   
     ]
     const anya=["Anya Khemlani, from Rye, New York, is majoring in Computer Science and Behavioral Neuroscience at Northeastern University’s Khoury College of Computer Science. Anya has neurodegenerative research experience at Columbia University’s Motor Neuron Center, as well as Weill Cornell Medicine’s Burke Neurological Institute. She currently holds a position as a research assistant at Northestern’s Movement Neuroscience Laboratory, where she is helping to conduct Amyotrophic Lateral Sclerosis research. Involved on campus as the co-vice president of the Northeastern University Researchers of Neuroscience club, Anya is hoping to conduct computational neuroscience research in the future. Her original involvement with S.E.A.L was to help build this website, alongside Connor Cross and Alissa Rogozin. Anya is looking forward to contributing to more healthcare policy research through the think tank, and she is excited about the opportunities coming up in the near future. In her free time, Anya loves to dance, listen to music, go to concerts, and spend time with her friends and family."]
     const alissa=["Alissa Rogozin, from Brookline, Massachusetts, is majoring in Computer Science and Design at Northeastern University. On campus, Alissa actively contributes to the TAMID Group, a tech and business consulting organization, where she refines her user-centered design and research skills. Through her participation in the tech consulting track and leadership committees, she is passionate about integrating innovative design solutions into web development. Her collaboration on S.E.A.L's website with Anya Khemlani enabled her to design a seamless digital experience. She hopes to pursue a career in UI/UX design, aiming to leverage technology to create impactful and intuitive user experiences. In her free time, Alissa enjoys dancing, listening to music, and spending time with friends and family.    "]
@@ -64,15 +75,23 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Aravind Krishnan" bio={aravind} imageSrc="/images/aravind.jpg" linkedIn="https://www.linkedin.com/in/aravind-m-krishnan/" twitter="https://x.com/_AravindK_"/>
+                <ProfileCard name="Shriya Garg" bio={shriya} imageSrc="/images/Shriya_Garg_headshot.jpeg" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
-                >
-                  <ProfileCard name="Shriya Garg" bio={shriya} imageSrc="/images/Shriya_Garg_headshot.jpeg" />
+               >
+              <ProfileCard name="Sruthi Ranganathan" bio={sruthi} imageSrc="/images/Sruthi Ranganathan.jpg" linkedIn="https://www.linkedin.com/in/sruthi-ranganathan-9243441b7/" twitter="https://x.com/SruthiRanganat1"/>
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                  >
+                  <ProfileCard name="Aravind Krishnan" bio={aravind} imageSrc="/images/aravind.jpg" linkedIn="https://www.linkedin.com/in/aravind-m-krishnan/" twitter="https://x.com/_AravindK_"/>
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -88,7 +107,7 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Sruthi Ranganathan" bio={sruthi} imageSrc="/images/Sruthi Ranganathan.jpg" linkedIn="https://www.linkedin.com/in/sruthi-ranganathan-9243441b7/" twitter="https://x.com/SruthiRanganat1"/>
+                  <ProfileCard name="Arnav Ajay Jadav" bio={arnav} imageSrc="/images/Khushi Kohli.jpeg" />
         </motion.div>
         <motion.div
                   initial={{ y: 50, opacity: 0 }}
@@ -96,9 +115,63 @@ const TeamSection = () => {
                   viewport={{ once: false }}
                   transition={{ duration: 0.8, ease: "easeInOut" }}
                 >
-                  <ProfileCard name="Aaryan Shah" bio={placeholder}  />
+           <ProfileCard name="Alessandro Hammond" bio={alessandro} imageSrc="/images/Khushi Kohli.jpeg" />
         </motion.div>
-        
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+           <ProfileCard name="Faraan Rahim" bio={faraan} imageSrc="/images/Khushi Kohli.jpeg" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+           <ProfileCard name="Seungwon (Lucy) Lee" bio={lucy} imageSrc="/images/Khushi Kohli.jpeg" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+           <ProfileCard name="Urvish" bio={urvish} imageSrc="/images/Khushi Kohli.jpeg" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+           <ProfileCard name="Aditya Arkalgud" bio={aditya} imageSrc="/images/Khushi Kohli.jpeg" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+           <ProfileCard name="Stephanie Wang" bio={stephanie} imageSrc="/images/Khushi Kohli.jpeg" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+           <ProfileCard name="Aaryan Shah" bio={aaryan} imageSrc="/images/Khushi Kohli.jpeg" />
+        </motion.div>
+        <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 0.8, ease: "easeInOut" }}
+                >
+               
         
       </div>
       <SectionDivider text="Our Advisors"/>
