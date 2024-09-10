@@ -21,7 +21,7 @@ export default function RootLayout({
 <html lang="en">
       <head>
         <title>Social Equity Action Lab</title>
-        <link rel="icon" href="/images/icon.png" />
+        <link rel="icon" href="/images/connor.png" />
         {/* You can also add more meta tags, stylesheets, etc. here */}
       </head>
       <body className={font.className}>

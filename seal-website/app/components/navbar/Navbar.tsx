@@ -18,9 +18,9 @@ const Navbar = () => {
     <div className="fixed w-full h-100 bg-gray-200 p-1 z-10 shadow-sm">
       <div className="py-1 border-b-[1px]">
         <Container>
-          <div className="flex w-full flex-row items-center justify-between gap-3 xl:flex">
+          <div className="flex w-full flex-row items-center justify-between gap-3 2xl:flex">
             <Logo />
-            <div className="hidden xl:flex space-x-4">
+            <div className="hidden 2xl:flex space-x-4">
               <NavbarSection title="About" href="#about" />
               <NavbarSection title="Initiatives" href="#initiatives" />
               <NavbarSection title="Team" onClick={() => router.push('/team')} />
@@ -30,7 +30,7 @@ const Navbar = () => {
               <NavbarSection title="Connect" href="#connect" />
               <NavbarSection title="Contact Us" onClick={() => { contactModal.onOpen() }} />
             </div>
-            <div className="flex xl:hidden">
+            <div className="flex 2xl:hidden">
               <Menu />
             </div>
           </div>
