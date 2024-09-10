@@ -50,7 +50,7 @@ const Client = () => {
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeIn" }}
                     className="w-full flex justify-center px-5 items-center"
                   >
 
@@ -62,7 +62,7 @@ const Client = () => {
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeIn" }}
                     className="w-full flex justify-center px-5 items-center"
                   >
               <Publication img="/images/asco.svg" href="https://ascopubs.org/doi/10.1200/OP.22.00740?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"/>
@@ -72,7 +72,7 @@ const Client = () => {
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeIn" }}
                     className="w-full flex justify-center px-5 items-center"
                   >
               <Publication img="/images/smith.png" href="https://www.smithsonianmag.com/science-nature/can-digital-psychiatry-really-fill-the-mental-health-care-gap-180982168/"/>
@@ -81,7 +81,7 @@ const Client = () => {
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeIn" }}
                     className="w-full flex justify-center px-5 items-center"
                   >
               <Publication img="/images/forbes.png" href="https://www.forbes.com/sites/tmobile/2021/05/03/how-one-high-school-student-is-bridging-the-digital-divide/?sh=62c3febc1c31"/>
@@ -90,7 +90,7 @@ const Client = () => {
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: false }}
-                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                    transition={{ duration: 0.5, ease: "easeIn" }}
                     className="w-full flex justify-center px-5 items-center"
                   >
               <Publication img="/images/springer.svg" href="https://link.springer.com/article/10.1007/s11606-023-08273-6"/>

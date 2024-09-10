@@ -55,7 +55,7 @@ const Client = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             className="w-full flex justify-center px-5"
           >
             <Publication img="/images/catalyst.svg" href="https://catalyst.nejm.org/doi/full/10.1056/CAT.22.0433" />
@@ -65,7 +65,7 @@ const Client = () => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: false }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             className="w-full flex justify-center px-5"
           >
             <Publication img="/images/ha.jpg" href="https://www.healthaffairs.org/content/forefront/us-healthcare-sector-can-decarbonize-reduce-waste-and-improve-public-health-thoughtful" />
